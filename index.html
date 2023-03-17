@@ -1,0 +1,584 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!--Google fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <!--fontaswome icons-->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+      integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!--Custom style-->
+    <link rel="stylesheet" href="./css/style.css" />
+
+    <!--Responsive css-->
+    <link rel="stylesheet" href="./css/responsive.css" />
+
+    <!--Custom js-->
+    <script defer src="./js/custom.js"></script>
+    <title>BTN- Landing page</title>
+  </head>
+  <body>
+    <header class="header">
+      <a href="#" class="logo">
+        <svg
+          viewBox="0 0 58 22"
+          fill="none"
+          class="logo-icon"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M0.397017 22V0.181818H8.38707C9.93537 0.181818 11.2173 0.437499 12.233 0.948863C13.2486 1.45312 14.0085 2.13849 14.5128 3.00497C15.017 3.86435 15.2692 4.83381 15.2692 5.91335C15.2692 6.82244 15.1023 7.58949 14.7685 8.21449C14.4347 8.83239 13.9872 9.32954 13.4261 9.70597C12.8722 10.0753 12.2614 10.3452 11.5938 10.5156V10.7287C12.3182 10.7642 13.0249 10.9986 13.7138 11.4318C14.4098 11.858 14.9851 12.4652 15.4396 13.2536C15.8942 14.0419 16.1214 15.0007 16.1214 16.13C16.1214 17.245 15.8587 18.2464 15.3331 19.1342C14.8146 20.0149 14.0121 20.7145 12.9254 21.233C11.8388 21.7443 10.4503 22 8.75994 22H0.397017ZM3.68892 19.1768H8.44034C10.017 19.1768 11.1463 18.8714 11.8281 18.2607C12.5099 17.6499 12.8509 16.8864 12.8509 15.9702C12.8509 15.2812 12.6768 14.6491 12.3288 14.0739C11.9808 13.4986 11.4837 13.0405 10.8374 12.6996C10.1982 12.3587 9.43821 12.1882 8.55753 12.1882H3.68892V19.1768ZM3.68892 9.62074H8.09943C8.83807 9.62074 9.50213 9.47869 10.0916 9.1946C10.6882 8.91051 11.1605 8.51278 11.5085 8.00142C11.8636 7.48295 12.0412 6.87216 12.0412 6.16903C12.0412 5.26705 11.7251 4.51065 11.093 3.89986C10.4609 3.28906 9.49148 2.98366 8.18466 2.98366H3.68892V9.62074ZM57.177 0.181818V22H54.1515L43.0613 5.99858H42.8588V22H39.5669V0.181818H42.6138L53.7147 16.2045H53.9171V0.181818H57.177Z"
+            fill="#7854F6"
+          />
+          <path
+            d="M18.9499 3.01562V0.181818H35.8356V3.01562H29.0281V22H25.7468V3.01562H18.9499Z"
+            fill="#292E4B"
+          />
+        </svg>
+        <select name="language">
+          <option value="En">en</option>
+        </select>
+      </a>
+
+      <nav class="nav">
+        <ul class="nav-list">
+          <li class="nav-item">
+            <a href="#" class="nav-link"> Features</a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link"> Solution</a>
+          </li>
+          <li class="nav-item"><a href="#" class="nav-link"> Resources</a></li>
+          <li class="nav-item"><a href="#" class="nav-link"> Blog</a></li>
+          <li class="nav-item"><a href="#" class="nav-link"> About</a></li>
+        </ul>
+        <button class="btn btn--primary btn-cta">Sign in</button>
+      </nav>
+
+      <button class="btn btn-mobile-nav">
+        <i class="fa-solid fa-bars icon-mobile-nav open-menu" name="test"></i>
+        <i class="fa-solid fa-x icon-mobile-nav close-menu"></i>
+      </button>
+    </header>
+
+    <main>
+      <!-------------------------------------Section Hero---------------------------------------------------->
+      <section class="hero">
+        <div class="hero-content">
+          <div class="hero-text">
+            <h1 class="headding-primary">
+              Beautiful
+              <span class="mark-secondary"
+                >analytics to grow smarter with BTN
+              </span>
+            </h1>
+            <p class="text-description">
+              Powerful yet seamless software that connects data, teams, and
+              customers on a single CRM platform, scaling with your business.
+            </p>
+
+            <div class="hero-actions">
+              <button class="btn btn--primary">Start demo</button>
+              <button class="btn btn--outline">Sign Up</button>
+            </div>
+          </div>
+          <div class="hero-image">
+            <img src="./img/pics - global statistics.svg" alt="" />
+            <div class="hero-circle-box"></div>
+          </div>
+        </div>
+      </section>
+
+      <!-------------------------------------Section Featured logo---------------------------------------------------->
+      <section class="featured" id="feature">
+        <div class="featured-logos">
+          <img src="./img/Company logo-1.png" alt="Databricks logo" />
+          <img src="./img/Company logo-2.png" alt="Lattice logo" />
+          <img src="./img/Company logo-3.png" alt="Slack logo" />
+          <img src="./img/Company logo-4.png" alt="Shopify logo" />
+          <img src="./img/Company logo-5.png" alt="Amazon logo" />
+          <img src="./img/Company logo.png" alt="Monday logo" />
+        </div>
+      </section>
+
+      <!-------------------------------------Section Plans---------------------------------------------------->
+
+      <section class="plans" id="plans">
+        <h2 class="headding-primary container">
+          What is B<span class="mark-secondary">T</span>N
+        </h2>
+        <p class="intro-text">
+          BTN is a comprehensive CRM platform that offers the necessary
+          software, integrations, and resources to connect marketing, sales,
+          content management, and customer service. While each product in the
+          platform is powerful in its own right, the true value lies in using
+          them together for optimal synergy and results.
+        </p>
+        <button class="btn btn--primary">Demo premium CRM</button>
+        <button class="btn btn--outline">Get Free CRM</button>
+
+        <div class="plans-cards grid grid-3-cols">
+          <div class="plan">
+            <h3 class="plan-heading">
+              <span class="number">1</span>Marketing Hub
+            </h3>
+
+            <p class="plan-description">
+              Elevate your marketing efforts with software that enables you to
+              increase traffic, boost conversions, and execute end-to-end
+              inbound marketing campaigns on a large scale.
+            </p>
+            <hr />
+
+            <div class="plan-features">
+              <h4>Popular Features</h4>
+              <ul class="plan-list">
+                <li>
+                  <svg
+                    width="33"
+                    height="33"
+                    viewBox="0 0 33 33"
+                    fill="none"
+                    class="plan-icon"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M11.6252 16.5L14.8752 19.75L21.3752 13.25M9.73165 4.63272C10.8976 4.53967 12.0046 4.08116 12.8948 3.32248C14.9723 1.55201 18.028 1.55201 20.1055 3.32248C20.9959 4.08116 22.1027 4.53967 23.2688 4.63272C25.9897 4.84985 28.1504 7.01052 28.3675 9.73147C28.4605 10.8975 28.9191 12.0044 29.6778 12.8947C31.4482 14.9722 31.4482 18.0278 29.6778 20.1054C28.9191 20.9956 28.4605 22.1025 28.3675 23.2686C28.1504 25.9895 25.9897 28.1501 23.2688 28.3674C22.1028 28.4603 20.9959 28.9189 20.1055 29.6776C18.028 31.4481 14.9723 31.4481 12.8948 29.6776C12.0046 28.9189 10.8976 28.4603 9.73165 28.3674C7.0107 28.1501 4.85003 25.9895 4.6329 23.2686C4.53985 22.1025 4.08134 20.9956 3.32266 20.1054C1.55219 18.0278 1.55219 14.9722 3.32266 12.8947C4.08134 12.0044 4.53985 10.8975 4.6329 9.73147C4.85003 7.01052 7.0107 4.84985 9.73165 4.63272Z"
+                      stroke="#7854F6"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+
+                  <span>Lead generation</span>
+                </li>
+                <li>
+                  <svg
+                    width="33"
+                    height="33"
+                    viewBox="0 0 33 33"
+                    fill="none"
+                    class="plan-icon"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M11.6252 16.5L14.8752 19.75L21.3752 13.25M9.73165 4.63272C10.8976 4.53967 12.0046 4.08116 12.8948 3.32248C14.9723 1.55201 18.028 1.55201 20.1055 3.32248C20.9959 4.08116 22.1027 4.53967 23.2688 4.63272C25.9897 4.84985 28.1504 7.01052 28.3675 9.73147C28.4605 10.8975 28.9191 12.0044 29.6778 12.8947C31.4482 14.9722 31.4482 18.0278 29.6778 20.1054C28.9191 20.9956 28.4605 22.1025 28.3675 23.2686C28.1504 25.9895 25.9897 28.1501 23.2688 28.3674C22.1028 28.4603 20.9959 28.9189 20.1055 29.6776C18.028 31.4481 14.9723 31.4481 12.8948 29.6776C12.0046 28.9189 10.8976 28.4603 9.73165 28.3674C7.0107 28.1501 4.85003 25.9895 4.6329 23.2686C4.53985 22.1025 4.08134 20.9956 3.32266 20.1054C1.55219 18.0278 1.55219 14.9722 3.32266 12.8947C4.08134 12.0044 4.53985 10.8975 4.6329 9.73147C4.85003 7.01052 7.0107 4.84985 9.73165 4.63272Z"
+                      stroke="#7854F6"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+
+                  <span>Marketing automation</span>
+                </li>
+                <li>
+                  <svg
+                    width="33"
+                    height="33"
+                    viewBox="0 0 33 33"
+                    fill="none"
+                    class="plan-icon"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M11.6252 16.5L14.8752 19.75L21.3752 13.25M9.73165 4.63272C10.8976 4.53967 12.0046 4.08116 12.8948 3.32248C14.9723 1.55201 18.028 1.55201 20.1055 3.32248C20.9959 4.08116 22.1027 4.53967 23.2688 4.63272C25.9897 4.84985 28.1504 7.01052 28.3675 9.73147C28.4605 10.8975 28.9191 12.0044 29.6778 12.8947C31.4482 14.9722 31.4482 18.0278 29.6778 20.1054C28.9191 20.9956 28.4605 22.1025 28.3675 23.2686C28.1504 25.9895 25.9897 28.1501 23.2688 28.3674C22.1028 28.4603 20.9959 28.9189 20.1055 29.6776C18.028 31.4481 14.9723 31.4481 12.8948 29.6776C12.0046 28.9189 10.8976 28.4603 9.73165 28.3674C7.0107 28.1501 4.85003 25.9895 4.6329 23.2686C4.53985 22.1025 4.08134 20.9956 3.32266 20.1054C1.55219 18.0278 1.55219 14.9722 3.32266 12.8947C4.08134 12.0044 4.53985 10.8975 4.6329 9.73147C4.85003 7.01052 7.0107 4.84985 9.73165 4.63272Z"
+                      stroke="#7854F6"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+
+                  <span>Analytics</span>
+                </li>
+              </ul>
+            </div>
+
+            <button class="btn btn--primary">Get started</button>
+          </div>
+
+          <div class="plan popular">
+            <h3 class="plan-heading">
+              <span class="number">2</span>Marketing Hub
+            </h3>
+
+            <p class="plan-description">
+              Maximize your sales potential with CRM software that provides
+              deeper insights into your prospects, streamlines tedious tasks,
+              and accelerates the deal-closing process.
+            </p>
+            <hr />
+
+            <div class="plan-features">
+              <h4>Popular Features</h4>
+              <ul class="plan-list">
+                <li>
+                  <svg
+                    width="33"
+                    height="33"
+                    viewBox="0 0 33 33"
+                    fill="none"
+                    class="plan-icon"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M11.6252 16.5L14.8752 19.75L21.3752 13.25M9.73165 4.63272C10.8976 4.53967 12.0046 4.08116 12.8948 3.32248C14.9723 1.55201 18.028 1.55201 20.1055 3.32248C20.9959 4.08116 22.1027 4.53967 23.2688 4.63272C25.9897 4.84985 28.1504 7.01052 28.3675 9.73147C28.4605 10.8975 28.9191 12.0044 29.6778 12.8947C31.4482 14.9722 31.4482 18.0278 29.6778 20.1054C28.9191 20.9956 28.4605 22.1025 28.3675 23.2686C28.1504 25.9895 25.9897 28.1501 23.2688 28.3674C22.1028 28.4603 20.9959 28.9189 20.1055 29.6776C18.028 31.4481 14.9723 31.4481 12.8948 29.6776C12.0046 28.9189 10.8976 28.4603 9.73165 28.3674C7.0107 28.1501 4.85003 25.9895 4.6329 23.2686C4.53985 22.1025 4.08134 20.9956 3.32266 20.1054C1.55219 18.0278 1.55219 14.9722 3.32266 12.8947C4.08134 12.0044 4.53985 10.8975 4.6329 9.73147C4.85003 7.01052 7.0107 4.84985 9.73165 4.63272Z"
+                      stroke="#7854F6"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+
+                  <span>Advanced CRM</span>
+                </li>
+                <li>
+                  <svg
+                    width="33"
+                    height="33"
+                    viewBox="0 0 33 33"
+                    fill="none"
+                    class="plan-icon"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M11.6252 16.5L14.8752 19.75L21.3752 13.25M9.73165 4.63272C10.8976 4.53967 12.0046 4.08116 12.8948 3.32248C14.9723 1.55201 18.028 1.55201 20.1055 3.32248C20.9959 4.08116 22.1027 4.53967 23.2688 4.63272C25.9897 4.84985 28.1504 7.01052 28.3675 9.73147C28.4605 10.8975 28.9191 12.0044 29.6778 12.8947C31.4482 14.9722 31.4482 18.0278 29.6778 20.1054C28.9191 20.9956 28.4605 22.1025 28.3675 23.2686C28.1504 25.9895 25.9897 28.1501 23.2688 28.3674C22.1028 28.4603 20.9959 28.9189 20.1055 29.6776C18.028 31.4481 14.9723 31.4481 12.8948 29.6776C12.0046 28.9189 10.8976 28.4603 9.73165 28.3674C7.0107 28.1501 4.85003 25.9895 4.6329 23.2686C4.53985 22.1025 4.08134 20.9956 3.32266 20.1054C1.55219 18.0278 1.55219 14.9722 3.32266 12.8947C4.08134 12.0044 4.53985 10.8975 4.6329 9.73147C4.85003 7.01052 7.0107 4.84985 9.73165 4.63272Z"
+                      stroke="#7854F6"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+
+                  <span>Meeting scheduling </span>
+                </li>
+                <li>
+                  <svg
+                    width="33"
+                    height="33"
+                    viewBox="0 0 33 33"
+                    fill="none"
+                    class="plan-icon"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M11.6252 16.5L14.8752 19.75L21.3752 13.25M9.73165 4.63272C10.8976 4.53967 12.0046 4.08116 12.8948 3.32248C14.9723 1.55201 18.028 1.55201 20.1055 3.32248C20.9959 4.08116 22.1027 4.53967 23.2688 4.63272C25.9897 4.84985 28.1504 7.01052 28.3675 9.73147C28.4605 10.8975 28.9191 12.0044 29.6778 12.8947C31.4482 14.9722 31.4482 18.0278 29.6778 20.1054C28.9191 20.9956 28.4605 22.1025 28.3675 23.2686C28.1504 25.9895 25.9897 28.1501 23.2688 28.3674C22.1028 28.4603 20.9959 28.9189 20.1055 29.6776C18.028 31.4481 14.9723 31.4481 12.8948 29.6776C12.0046 28.9189 10.8976 28.4603 9.73165 28.3674C7.0107 28.1501 4.85003 25.9895 4.6329 23.2686C4.53985 22.1025 4.08134 20.9956 3.32266 20.1054C1.55219 18.0278 1.55219 14.9722 3.32266 12.8947C4.08134 12.0044 4.53985 10.8975 4.6329 9.73147C4.85003 7.01052 7.0107 4.84985 9.73165 4.63272Z"
+                      stroke="#7854F6"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+
+                  <span>Payments</span>
+                </li>
+              </ul>
+            </div>
+
+            <button class="btn btn--primary">Get started</button>
+          </div>
+
+          <div class="plan">
+            <h3 class="plan-heading">
+              <span class="number">3</span>Marketing Hub
+            </h3>
+
+            <p class="plan-description">
+              Transform your customer service experience with software that
+              enables you to engage with customers, surpass their expectations,
+              and transform them into brand promoters that drive business
+              growth.
+            </p>
+            <hr />
+
+            <div class="plan-features">
+              <h4>Popular Features</h4>
+              <ul class="plan-list">
+                <li>
+                  <svg
+                    width="33"
+                    height="33"
+                    viewBox="0 0 33 33"
+                    fill="none"
+                    class="plan-icon"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M11.6252 16.5L14.8752 19.75L21.3752 13.25M9.73165 4.63272C10.8976 4.53967 12.0046 4.08116 12.8948 3.32248C14.9723 1.55201 18.028 1.55201 20.1055 3.32248C20.9959 4.08116 22.1027 4.53967 23.2688 4.63272C25.9897 4.84985 28.1504 7.01052 28.3675 9.73147C28.4605 10.8975 28.9191 12.0044 29.6778 12.8947C31.4482 14.9722 31.4482 18.0278 29.6778 20.1054C28.9191 20.9956 28.4605 22.1025 28.3675 23.2686C28.1504 25.9895 25.9897 28.1501 23.2688 28.3674C22.1028 28.4603 20.9959 28.9189 20.1055 29.6776C18.028 31.4481 14.9723 31.4481 12.8948 29.6776C12.0046 28.9189 10.8976 28.4603 9.73165 28.3674C7.0107 28.1501 4.85003 25.9895 4.6329 23.2686C4.53985 22.1025 4.08134 20.9956 3.32266 20.1054C1.55219 18.0278 1.55219 14.9722 3.32266 12.8947C4.08134 12.0044 4.53985 10.8975 4.6329 9.73147C4.85003 7.01052 7.0107 4.84985 9.73165 4.63272Z"
+                      stroke="#7854F6"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+
+                  <span>Knowlege base </span>
+                </li>
+                <li>
+                  <svg
+                    width="33"
+                    height="33"
+                    viewBox="0 0 33 33"
+                    fill="none"
+                    class="plan-icon"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M11.6252 16.5L14.8752 19.75L21.3752 13.25M9.73165 4.63272C10.8976 4.53967 12.0046 4.08116 12.8948 3.32248C14.9723 1.55201 18.028 1.55201 20.1055 3.32248C20.9959 4.08116 22.1027 4.53967 23.2688 4.63272C25.9897 4.84985 28.1504 7.01052 28.3675 9.73147C28.4605 10.8975 28.9191 12.0044 29.6778 12.8947C31.4482 14.9722 31.4482 18.0278 29.6778 20.1054C28.9191 20.9956 28.4605 22.1025 28.3675 23.2686C28.1504 25.9895 25.9897 28.1501 23.2688 28.3674C22.1028 28.4603 20.9959 28.9189 20.1055 29.6776C18.028 31.4481 14.9723 31.4481 12.8948 29.6776C12.0046 28.9189 10.8976 28.4603 9.73165 28.3674C7.0107 28.1501 4.85003 25.9895 4.6329 23.2686C4.53985 22.1025 4.08134 20.9956 3.32266 20.1054C1.55219 18.0278 1.55219 14.9722 3.32266 12.8947C4.08134 12.0044 4.53985 10.8975 4.6329 9.73147C4.85003 7.01052 7.0107 4.84985 9.73165 4.63272Z"
+                      stroke="#7854F6"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+
+                  <span>Customer feedback </span>
+                </li>
+                <li>
+                  <svg
+                    width="33"
+                    height="33"
+                    viewBox="0 0 33 33"
+                    fill="none"
+                    class="plan-icon"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M11.6252 16.5L14.8752 19.75L21.3752 13.25M9.73165 4.63272C10.8976 4.53967 12.0046 4.08116 12.8948 3.32248C14.9723 1.55201 18.028 1.55201 20.1055 3.32248C20.9959 4.08116 22.1027 4.53967 23.2688 4.63272C25.9897 4.84985 28.1504 7.01052 28.3675 9.73147C28.4605 10.8975 28.9191 12.0044 29.6778 12.8947C31.4482 14.9722 31.4482 18.0278 29.6778 20.1054C28.9191 20.9956 28.4605 22.1025 28.3675 23.2686C28.1504 25.9895 25.9897 28.1501 23.2688 28.3674C22.1028 28.4603 20.9959 28.9189 20.1055 29.6776C18.028 31.4481 14.9723 31.4481 12.8948 29.6776C12.0046 28.9189 10.8976 28.4603 9.73165 28.3674C7.0107 28.1501 4.85003 25.9895 4.6329 23.2686C4.53985 22.1025 4.08134 20.9956 3.32266 20.1054C1.55219 18.0278 1.55219 14.9722 3.32266 12.8947C4.08134 12.0044 4.53985 10.8975 4.6329 9.73147C4.85003 7.01052 7.0107 4.84985 9.73165 4.63272Z"
+                      stroke="#7854F6"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+
+                  <span>Tickets</span>
+                </li>
+              </ul>
+            </div>
+
+            <button class="btn btn--primary">Get started</button>
+          </div>
+        </div>
+      </section>
+
+      <!-------------------------------------Section Achievements---------------------------------------------------->
+      <section class="achievements">
+        <h2 class="headding-secondary">
+          Get award-winning support and join a thriving community to learn and
+          grow faster.
+        </h2>
+        <p class="intro-text">
+          Discover how to unlock the full potential of HubSpot with a wealth of
+          free courses, certifications, and resources. Coupled with an
+          unparalleled customer support team and an engaged user community,
+          you'll have all the support you need to succeed.
+        </p>
+
+        <div class="achivements-contents grid grid-4-cols">
+          <div class="achivement">
+            <!-- <img
+              class="achivement-icon"
+              src="./img/hands.png"
+              alt="shaking hands"
+            /> -->
+            <i class="fa-solid fa-handshake achive-icon"></i>
+            <span class="achivement-number">200</span>
+            <span class="achievement-title">200 BTN user group</span>
+          </div>
+
+          <div class="achivement">
+            <img
+              class="achivement-icon"
+              src="./img/btn-achievement.svg"
+              alt="BTN logo brand"
+            />
+            <span class="achivement-number">2M</span>
+            <span class="achievement-title">Monthly visits</span>
+          </div>
+
+          <div class="achivement">
+            <!-- <img
+              class="achivement-icon"
+              src="./img/graduate.png"
+              alt="graduation hat"
+            /> -->
+            <i class="fa-solid fa-graduation-cap achive-icon"></i>
+            <span class="achivement-number">600K</span>
+            <span class="achievement-title">Certified professionals</span>
+          </div>
+
+          <div class="achivement">
+            <!-- <img
+              class="achivement-icon"
+              src="./img/customers.png"
+              alt="person icons"
+            /> -->
+            <i class="fa-solid fa-users achive-icon"></i>
+            <span class="achivement-number">200,000</span>
+            <span class="achievement-title">Customers</span>
+          </div>
+
+          <div class="achivement">
+            <!-- <img
+              class="achivement-icon"
+              src="./img/communication.svg"
+              alt="chat icon"
+            /> -->
+            <i class="fa-sharp fa-solid fa-comments achive-icon"></i>
+            <span class="achivement-number">4M</span>
+            <span class="achievement-title">Soical followers</span>
+          </div>
+
+          <div class="achivement">
+            <!-- <img
+              class="achivement-icon"
+              src="./img/earth.png"
+              alt="Earth icon"
+            /> -->
+            <i class="fa-solid fa-earth-americas achive-icon"></i>
+            <span class="achivement-number">8</span>
+            <span class="achievement-title">Languges</span>
+          </div>
+        </div>
+      </section>
+
+      <!-------------------------------------Section Testimonials---------------------------------------------------->
+      <section class="testimonials">
+        <h2 class="headding-secondary">
+          Why marketers choose B<span class="mark-secondary">T</span>N
+        </h2>
+
+        <div class="testimonials__content">
+          <blockquote>
+            <div class="card">
+              <img
+                src="./img/customer.png"
+                alt="Customer phot"
+                class="card-image"
+              />
+              <p class="customer-name">Mark B.</p>
+              <p class="customer-job">Decode Digital Marketing</p>
+              <img class="customer-reviews" src="./img/review.svg" />
+              <p class="customer-comment">
+                “The analysis function of the competition is amazing: you can
+                analyze your competitors and where it compares with them and
+                perform gap analysis, where they are classified where not, etc.”
+              </p>
+            </div>
+            <button class="btn-arrow btn-left">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="testimonial-arrow-icon"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M15.75 19.5L8.25 12l7.5-7.5"
+                />
+              </svg>
+            </button>
+            <button class="btn-arrow btn-right">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="testimonial-arrow-icon"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M8.25 4.5l7.5 7.5-7.5 7.5"
+                />
+              </svg>
+            </button>
+          </blockquote>
+        </div>
+        <button class="btn btn--primary">Demo premium CRM</button>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="footer-content">
+        <div>
+          <h2>Free Tools</h2>
+          <ul class="footer-links">
+            <li><a href="#">Website Grader </a></li>
+            <li><a href="#">Make My Persona </a></li>
+            <li><a href="#"> Email Signature Generator </a></li>
+            <li><a href="#">Brand Kit Generator </a></li>
+            <li><a href="#"> Blog Ideas Generator </a></li>
+          </ul>
+        </div>
+        <div>
+          <h2>Company</h2>
+          <ul class="footer-links">
+            <li><a href="#"> About Us </a></li>
+            <li><a href="#"> Management Team </a></li>
+            <li><a href="#"> Blog </a></li>
+            <li><a href="#">Contact Us </a></li>
+          </ul>
+        </div>
+        <div>
+          <h2>Learning</h2>
+          <ul class="footer-links">
+            <li><a href="#">All Partner Programs </a></li>
+            <li><a href="#">Solutions Partner Program </a></li>
+            <li><a href="#"> App Partner Program </a></li>
+          </ul>
+        </div>
+        <div class="resources">
+          <h2>Resources</h2>
+          <ul class="footer-links">
+            <li><a href="#">Customer Support </a></li>
+            <li><a href="#"> Join a Local User </a></li>
+            <li><a href="#">Group </a></li>
+          </ul>
+        </div>
+      </div>
+      <hr />
+      <p class="copyright">© 2023 BTN. All rights reserved.</p>
+      <ul class="social-icons">
+        <li>
+          <a href="#">
+            <img src="./img/001-facebook-logo-button.png" alt="facebook icon"
+          /></a>
+        </li>
+        <li>
+          <a href="#">
+            <img src="./img/002-twitter.png" alt="twitter icon"
+          /></a>
+        </li>
+        <li>
+          <a href="#">
+            <img src="./img/004-vimeo-social-logo.png" alt="instagram icon"
+          /></a>
+        </li>
+        <li>
+          <a href="#"> <img src="./img/oval.png" alt="Oval icon" /></a>
+        </li>
+      </ul>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!--Google fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!--Custom style-->
+    <link rel="stylesheet" href="./css/style.css" />
+
+    <!--Custom js-->
+    <script defer src="./js/custom.js"></script>
+    <title>Plans</title>
+
+    <style>
+      .plans {
+        text-align: center;
+        position: relative;
+      }
+
+      .plans::after {
+        content: "";
+        width: 50rem;
+        height: 50rem;
+        border-radius: 50%;
+        background: rgba(120, 84, 246, 0.3);
+        position: absolute;
+        top: 30%;
+        left: 50%;
+        transform: translateX(-50%);
+        z-index: -1;
+        filter: blur(300px);
+      }
+
+      .plans-cards {
+        margin-top: 12.4rem;
+        column-gap: 7rem;
+      }
+
+      .plan {
+        background-color: #fff;
+        border-radius: 1rem;
+        padding: 2rem 1.5rem;
+        width: 47rem;
+      }
+
+      .plan.popular {
+        transform: translateY(10rem);
+        transition: transform 300ms ease;
+      }
+      .plan.popular:hover {
+        transform: translateY(0);
+      }
+
+      .plan-heading {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 3rem;
+        font-weight: 500;
+        line-height: 1.5;
+        /* margin-bottom: 7rem; */
+      }
+
+      .plan-heading .number {
+        font-size: 10rem;
+        font-weight: 600;
+        color: var(--primary-color);
+      }
+
+      .plan-description {
+        margin-bottom: 6rem;
+        text-align: left;
+      }
+
+      .plan-features {
+        text-align: left;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .plan hr {
+        height: 2px;
+        color: #d6d6d6;
+        border-radius: 6rem;
+        margin-bottom: 3rem;
+      }
+
+      .plan-list {
+        display: flex;
+        flex-direction: column;
+        gap: 3rem;
+        margin-bottom: 3rem;
+      }
+
+      .plan-list li {
+        display: flex;
+        align-items: center;
+        gap: 2rem;
+      }
+
+      .plan .btn--primary {
+        width: 40rem;
+        margin: 0 auto;
+      }
+    </style>
+  </head>
+  <body>
+    <section class="plans">
+      <h2 class="headding-primary">
+        What is B<span class="mark-secondary">T</span>N
+      </h2>
+      <p class="intro-text">
+        BTN is a comprehensive CRM platform that offers the necessary software,
+        integrations, and resources to connect marketing, sales, content
+        management, and customer service. While each product in the platform is
+        powerful in its own right, the true value lies in using them together
+        for optimal synergy and results.
+      </p>
+      <button class="btn btn--primary">Demo premium CRM</button>
+      <button class="btn btn--outline">Get Free CRM</button>
+
+      <div class="plans-cards grid grid-3-cols">
+        <div class="plan">
+          <h3 class="plan-heading">
+            <span class="number">1</span>Marketing Hub
+          </h3>
+
+          <p class="plan-description">
+            Elevate your marketing efforts with software that enables you to
+            increase traffic, boost conversions, and execute end-to-end inbound
+            marketing campaigns on a large scale.
+          </p>
+          <hr />
+
+          <div class="plan-features">
+            <h4>Popular Features</h4>
+            <ul class="plan-list">
+              <li>
+                <svg
+                  width="33"
+                  height="33"
+                  viewBox="0 0 33 33"
+                  fill="none"
+                  class="plan-icon"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M11.6252 16.5L14.8752 19.75L21.3752 13.25M9.73165 4.63272C10.8976 4.53967 12.0046 4.08116 12.8948 3.32248C14.9723 1.55201 18.028 1.55201 20.1055 3.32248C20.9959 4.08116 22.1027 4.53967 23.2688 4.63272C25.9897 4.84985 28.1504 7.01052 28.3675 9.73147C28.4605 10.8975 28.9191 12.0044 29.6778 12.8947C31.4482 14.9722 31.4482 18.0278 29.6778 20.1054C28.9191 20.9956 28.4605 22.1025 28.3675 23.2686C28.1504 25.9895 25.9897 28.1501 23.2688 28.3674C22.1028 28.4603 20.9959 28.9189 20.1055 29.6776C18.028 31.4481 14.9723 31.4481 12.8948 29.6776C12.0046 28.9189 10.8976 28.4603 9.73165 28.3674C7.0107 28.1501 4.85003 25.9895 4.6329 23.2686C4.53985 22.1025 4.08134 20.9956 3.32266 20.1054C1.55219 18.0278 1.55219 14.9722 3.32266 12.8947C4.08134 12.0044 4.53985 10.8975 4.6329 9.73147C4.85003 7.01052 7.0107 4.84985 9.73165 4.63272Z"
+                    stroke="#7854F6"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+
+                <span>Lead generation</span>
+              </li>
+              <li>
+                <svg
+                  width="33"
+                  height="33"
+                  viewBox="0 0 33 33"
+                  fill="none"
+                  class="plan-icon"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M11.6252 16.5L14.8752 19.75L21.3752 13.25M9.73165 4.63272C10.8976 4.53967 12.0046 4.08116 12.8948 3.32248C14.9723 1.55201 18.028 1.55201 20.1055 3.32248C20.9959 4.08116 22.1027 4.53967 23.2688 4.63272C25.9897 4.84985 28.1504 7.01052 28.3675 9.73147C28.4605 10.8975 28.9191 12.0044 29.6778 12.8947C31.4482 14.9722 31.4482 18.0278 29.6778 20.1054C28.9191 20.9956 28.4605 22.1025 28.3675 23.2686C28.1504 25.9895 25.9897 28.1501 23.2688 28.3674C22.1028 28.4603 20.9959 28.9189 20.1055 29.6776C18.028 31.4481 14.9723 31.4481 12.8948 29.6776C12.0046 28.9189 10.8976 28.4603 9.73165 28.3674C7.0107 28.1501 4.85003 25.9895 4.6329 23.2686C4.53985 22.1025 4.08134 20.9956 3.32266 20.1054C1.55219 18.0278 1.55219 14.9722 3.32266 12.8947C4.08134 12.0044 4.53985 10.8975 4.6329 9.73147C4.85003 7.01052 7.0107 4.84985 9.73165 4.63272Z"
+                    stroke="#7854F6"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+
+                <span>Marketing automation</span>
+              </li>
+              <li>
+                <svg
+                  width="33"
+                  height="33"
+                  viewBox="0 0 33 33"
+                  fill="none"
+                  class="plan-icon"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M11.6252 16.5L14.8752 19.75L21.3752 13.25M9.73165 4.63272C10.8976 4.53967 12.0046 4.08116 12.8948 3.32248C14.9723 1.55201 18.028 1.55201 20.1055 3.32248C20.9959 4.08116 22.1027 4.53967 23.2688 4.63272C25.9897 4.84985 28.1504 7.01052 28.3675 9.73147C28.4605 10.8975 28.9191 12.0044 29.6778 12.8947C31.4482 14.9722 31.4482 18.0278 29.6778 20.1054C28.9191 20.9956 28.4605 22.1025 28.3675 23.2686C28.1504 25.9895 25.9897 28.1501 23.2688 28.3674C22.1028 28.4603 20.9959 28.9189 20.1055 29.6776C18.028 31.4481 14.9723 31.4481 12.8948 29.6776C12.0046 28.9189 10.8976 28.4603 9.73165 28.3674C7.0107 28.1501 4.85003 25.9895 4.6329 23.2686C4.53985 22.1025 4.08134 20.9956 3.32266 20.1054C1.55219 18.0278 1.55219 14.9722 3.32266 12.8947C4.08134 12.0044 4.53985 10.8975 4.6329 9.73147C4.85003 7.01052 7.0107 4.84985 9.73165 4.63272Z"
+                    stroke="#7854F6"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+
+                <span>Analytics</span>
+              </li>
+            </ul>
+          </div>
+
+          <button class="btn btn--primary">Get started</button>
+        </div>
+
+        <div class="plan popular">
+          <h3 class="plan-heading">
+            <span class="number">2</span>Marketing Hub
+          </h3>
+
+          <p class="plan-description">
+            Maximize your sales potential with CRM software that provides deeper
+            insights into your prospects, streamlines tedious tasks, and
+            accelerates the deal-closing process.
+          </p>
+          <hr />
+
+          <div class="plan-features">
+            <h4>Popular Features</h4>
+            <ul class="plan-list">
+              <li>
+                <svg
+                  width="33"
+                  height="33"
+                  viewBox="0 0 33 33"
+                  fill="none"
+                  class="plan-icon"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M11.6252 16.5L14.8752 19.75L21.3752 13.25M9.73165 4.63272C10.8976 4.53967 12.0046 4.08116 12.8948 3.32248C14.9723 1.55201 18.028 1.55201 20.1055 3.32248C20.9959 4.08116 22.1027 4.53967 23.2688 4.63272C25.9897 4.84985 28.1504 7.01052 28.3675 9.73147C28.4605 10.8975 28.9191 12.0044 29.6778 12.8947C31.4482 14.9722 31.4482 18.0278 29.6778 20.1054C28.9191 20.9956 28.4605 22.1025 28.3675 23.2686C28.1504 25.9895 25.9897 28.1501 23.2688 28.3674C22.1028 28.4603 20.9959 28.9189 20.1055 29.6776C18.028 31.4481 14.9723 31.4481 12.8948 29.6776C12.0046 28.9189 10.8976 28.4603 9.73165 28.3674C7.0107 28.1501 4.85003 25.9895 4.6329 23.2686C4.53985 22.1025 4.08134 20.9956 3.32266 20.1054C1.55219 18.0278 1.55219 14.9722 3.32266 12.8947C4.08134 12.0044 4.53985 10.8975 4.6329 9.73147C4.85003 7.01052 7.0107 4.84985 9.73165 4.63272Z"
+                    stroke="#7854F6"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+
+                <span>Advanced CRM</span>
+              </li>
+              <li>
+                <svg
+                  width="33"
+                  height="33"
+                  viewBox="0 0 33 33"
+                  fill="none"
+                  class="plan-icon"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M11.6252 16.5L14.8752 19.75L21.3752 13.25M9.73165 4.63272C10.8976 4.53967 12.0046 4.08116 12.8948 3.32248C14.9723 1.55201 18.028 1.55201 20.1055 3.32248C20.9959 4.08116 22.1027 4.53967 23.2688 4.63272C25.9897 4.84985 28.1504 7.01052 28.3675 9.73147C28.4605 10.8975 28.9191 12.0044 29.6778 12.8947C31.4482 14.9722 31.4482 18.0278 29.6778 20.1054C28.9191 20.9956 28.4605 22.1025 28.3675 23.2686C28.1504 25.9895 25.9897 28.1501 23.2688 28.3674C22.1028 28.4603 20.9959 28.9189 20.1055 29.6776C18.028 31.4481 14.9723 31.4481 12.8948 29.6776C12.0046 28.9189 10.8976 28.4603 9.73165 28.3674C7.0107 28.1501 4.85003 25.9895 4.6329 23.2686C4.53985 22.1025 4.08134 20.9956 3.32266 20.1054C1.55219 18.0278 1.55219 14.9722 3.32266 12.8947C4.08134 12.0044 4.53985 10.8975 4.6329 9.73147C4.85003 7.01052 7.0107 4.84985 9.73165 4.63272Z"
+                    stroke="#7854F6"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+
+                <span>Meeting scheduling </span>
+              </li>
+              <li>
+                <svg
+                  width="33"
+                  height="33"
+                  viewBox="0 0 33 33"
+                  fill="none"
+                  class="plan-icon"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M11.6252 16.5L14.8752 19.75L21.3752 13.25M9.73165 4.63272C10.8976 4.53967 12.0046 4.08116 12.8948 3.32248C14.9723 1.55201 18.028 1.55201 20.1055 3.32248C20.9959 4.08116 22.1027 4.53967 23.2688 4.63272C25.9897 4.84985 28.1504 7.01052 28.3675 9.73147C28.4605 10.8975 28.9191 12.0044 29.6778 12.8947C31.4482 14.9722 31.4482 18.0278 29.6778 20.1054C28.9191 20.9956 28.4605 22.1025 28.3675 23.2686C28.1504 25.9895 25.9897 28.1501 23.2688 28.3674C22.1028 28.4603 20.9959 28.9189 20.1055 29.6776C18.028 31.4481 14.9723 31.4481 12.8948 29.6776C12.0046 28.9189 10.8976 28.4603 9.73165 28.3674C7.0107 28.1501 4.85003 25.9895 4.6329 23.2686C4.53985 22.1025 4.08134 20.9956 3.32266 20.1054C1.55219 18.0278 1.55219 14.9722 3.32266 12.8947C4.08134 12.0044 4.53985 10.8975 4.6329 9.73147C4.85003 7.01052 7.0107 4.84985 9.73165 4.63272Z"
+                    stroke="#7854F6"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+
+                <span>Payments</span>
+              </li>
+            </ul>
+          </div>
+
+          <button class="btn btn--primary">Get started</button>
+        </div>
+
+        <div class="plan">
+          <h3 class="plan-heading">
+            <span class="number">3</span>Marketing Hub
+          </h3>
+
+          <p class="plan-description">
+            Transform your customer service experience with software that
+            enables you to engage with customers, surpass their expectations,
+            and transform them into brand promoters that drive business growth.
+          </p>
+          <hr />
+
+          <div class="plan-features">
+            <h4>Popular Features</h4>
+            <ul class="plan-list">
+              <li>
+                <svg
+                  width="33"
+                  height="33"
+                  viewBox="0 0 33 33"
+                  fill="none"
+                  class="plan-icon"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M11.6252 16.5L14.8752 19.75L21.3752 13.25M9.73165 4.63272C10.8976 4.53967 12.0046 4.08116 12.8948 3.32248C14.9723 1.55201 18.028 1.55201 20.1055 3.32248C20.9959 4.08116 22.1027 4.53967 23.2688 4.63272C25.9897 4.84985 28.1504 7.01052 28.3675 9.73147C28.4605 10.8975 28.9191 12.0044 29.6778 12.8947C31.4482 14.9722 31.4482 18.0278 29.6778 20.1054C28.9191 20.9956 28.4605 22.1025 28.3675 23.2686C28.1504 25.9895 25.9897 28.1501 23.2688 28.3674C22.1028 28.4603 20.9959 28.9189 20.1055 29.6776C18.028 31.4481 14.9723 31.4481 12.8948 29.6776C12.0046 28.9189 10.8976 28.4603 9.73165 28.3674C7.0107 28.1501 4.85003 25.9895 4.6329 23.2686C4.53985 22.1025 4.08134 20.9956 3.32266 20.1054C1.55219 18.0278 1.55219 14.9722 3.32266 12.8947C4.08134 12.0044 4.53985 10.8975 4.6329 9.73147C4.85003 7.01052 7.0107 4.84985 9.73165 4.63272Z"
+                    stroke="#7854F6"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+
+                <span>Knowlege base </span>
+              </li>
+              <li>
+                <svg
+                  width="33"
+                  height="33"
+                  viewBox="0 0 33 33"
+                  fill="none"
+                  class="plan-icon"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M11.6252 16.5L14.8752 19.75L21.3752 13.25M9.73165 4.63272C10.8976 4.53967 12.0046 4.08116 12.8948 3.32248C14.9723 1.55201 18.028 1.55201 20.1055 3.32248C20.9959 4.08116 22.1027 4.53967 23.2688 4.63272C25.9897 4.84985 28.1504 7.01052 28.3675 9.73147C28.4605 10.8975 28.9191 12.0044 29.6778 12.8947C31.4482 14.9722 31.4482 18.0278 29.6778 20.1054C28.9191 20.9956 28.4605 22.1025 28.3675 23.2686C28.1504 25.9895 25.9897 28.1501 23.2688 28.3674C22.1028 28.4603 20.9959 28.9189 20.1055 29.6776C18.028 31.4481 14.9723 31.4481 12.8948 29.6776C12.0046 28.9189 10.8976 28.4603 9.73165 28.3674C7.0107 28.1501 4.85003 25.9895 4.6329 23.2686C4.53985 22.1025 4.08134 20.9956 3.32266 20.1054C1.55219 18.0278 1.55219 14.9722 3.32266 12.8947C4.08134 12.0044 4.53985 10.8975 4.6329 9.73147C4.85003 7.01052 7.0107 4.84985 9.73165 4.63272Z"
+                    stroke="#7854F6"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+
+                <span>Customer feedback </span>
+              </li>
+              <li>
+                <svg
+                  width="33"
+                  height="33"
+                  viewBox="0 0 33 33"
+                  fill="none"
+                  class="plan-icon"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M11.6252 16.5L14.8752 19.75L21.3752 13.25M9.73165 4.63272C10.8976 4.53967 12.0046 4.08116 12.8948 3.32248C14.9723 1.55201 18.028 1.55201 20.1055 3.32248C20.9959 4.08116 22.1027 4.53967 23.2688 4.63272C25.9897 4.84985 28.1504 7.01052 28.3675 9.73147C28.4605 10.8975 28.9191 12.0044 29.6778 12.8947C31.4482 14.9722 31.4482 18.0278 29.6778 20.1054C28.9191 20.9956 28.4605 22.1025 28.3675 23.2686C28.1504 25.9895 25.9897 28.1501 23.2688 28.3674C22.1028 28.4603 20.9959 28.9189 20.1055 29.6776C18.028 31.4481 14.9723 31.4481 12.8948 29.6776C12.0046 28.9189 10.8976 28.4603 9.73165 28.3674C7.0107 28.1501 4.85003 25.9895 4.6329 23.2686C4.53985 22.1025 4.08134 20.9956 3.32266 20.1054C1.55219 18.0278 1.55219 14.9722 3.32266 12.8947C4.08134 12.0044 4.53985 10.8975 4.6329 9.73147C4.85003 7.01052 7.0107 4.84985 9.73165 4.63272Z"
+                    stroke="#7854F6"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+
+                <span>Tickets</span>
+              </li>
+            </ul>
+          </div>
+
+          <button class="btn btn--primary">Get started</button>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>

@@ -1,0 +1,318 @@
+/**************
+  Below 1344px (smaller desktops)
+***************/
+
+@media (max-width: 84em) {
+  section {
+    max-width: 125rem;
+  }
+
+  section.featured {
+    max-width: 100%;
+  }
+}
+
+/**************
+  Below 1250px (Landscape Tablets)
+***************/
+
+@media (max-width: 78em) {
+  html {
+    font-size: 0.5625rem;
+  }
+  section.plans {
+    padding: 0 4rem;
+  }
+
+  .grid {
+    column-gap: 4rem;
+  }
+
+  .grid-3-cols {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .headding-primary {
+    font-size: 5rem;
+  }
+
+  .headding-secondary {
+    font-size: 4rem;
+  }
+
+  .plans-cards {
+    row-gap: 4rem;
+  }
+
+  .plan:last-child {
+    grid-column: 1 / -1;
+    align-self: center;
+    justify-self: center;
+    width: 48%;
+  }
+
+  .plan.popular {
+    transform: translateY(0);
+  }
+
+  .plan-heading .number {
+    font-size: 8rem;
+  }
+
+  .nav-list {
+    gap: 4rem;
+  }
+
+  .hero-text {
+    margin-top: 2rem;
+  }
+
+  .btn--primary,
+  .btn--outline {
+    width: 25rem;
+  }
+
+  .text-description {
+    font-size: 2.2rem;
+  }
+}
+
+/**************
+  Below 980 ( Tablets)
+***************/
+
+@media (max-width: 61em) {
+  html {
+    font-size: 0.5rem;
+  }
+
+  section.plans {
+    padding: 0;
+  }
+  .hero-content {
+    grid-template-columns: 1fr;
+    text-align: center;
+    row-gap: 8rem;
+  }
+
+  .hero-image,
+  .hero-text {
+    width: 60%;
+    margin: 0 auto;
+  }
+
+  .hero-actions {
+    justify-content: center;
+    align-items: center;
+  }
+
+  img.card-image {
+    width: 13rem;
+    height: 13rem;
+  }
+
+  .plans-cards {
+    justify-items: center;
+    column-gap: 4rem;
+  }
+
+  .plans-cards .plan {
+    /* width: 45rem; */
+  }
+
+  .footer-content {
+    grid-template-columns: 1fr 1fr;
+    row-gap: 8rem;
+  }
+
+  /***mobile ***/
+  .btn-mobile-nav {
+    display: block;
+  }
+
+  .nav {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #fafafaf1;
+    width: 100%;
+    height: 100vh;
+
+    transform: translateX(100%);
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    row-gap: 4rem;
+    transition: all 1s ease-in-out;
+    /****Hide navigatin ***/
+    opacity: 0;
+    pointer-events: none;
+    visibility: hidden;
+  }
+
+  .nav-open .nav {
+    opacity: 1;
+    pointer-events: auto;
+    visibility: unset;
+    transform: translateX(0);
+  }
+
+  .nav-open .close-menu {
+    display: block;
+  }
+
+  .nav-open .open-menu {
+    display: none;
+  }
+
+  .nav .nav-list {
+    display: flex;
+    flex-direction: column;
+  }
+  .nav-link:link,
+  .nav-link:visited,
+  .header .btn.btn-cta {
+    font-size: 2.8rem;
+    font-weight: 600;
+  }
+
+  .header .btn.btn-cta {
+    width: 15rem;
+    height: 6rem;
+  }
+}
+
+/**************
+  Below 785 (Small Tablets)
+***************/
+@media (max-width: 49em) {
+  .hero-image,
+  .hero-text {
+    width: 80%;
+  }
+  .hero-image {
+    height: inherit;
+  }
+  .featured-logos img {
+    height: 2.6rem;
+  }
+  .grid-4-cols {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
+/**************
+  Below 600 (Phones)
+***************/
+@media (max-width: 37.6em) {
+  .grid-2-cols,
+  .grid-3-cols {
+    grid-template-columns: 1fr;
+  }
+
+  .grid-4-cols {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .achivement:nth-child(5) {
+    grid-column: 1 / span 1;
+    justify-self: center;
+  }
+
+  .footer-content {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+
+  .headding-secondary {
+    font-size: 3.2rem;
+  }
+
+  .plans-cards .plan {
+    width: 85%;
+  }
+
+  .intro-text {
+    width: 85%;
+  }
+
+  .featured {
+    height: initial;
+    margin-bottom: 12rem;
+  }
+
+  .featured-logos {
+    flex-wrap: wrap;
+  }
+  .testimonials__content {
+    padding: 5rem;
+  }
+  .customer-comment {
+    width: 100%;
+  }
+
+  .btn-right {
+    right: 0;
+  }
+
+  .btn-left {
+    left: 0;
+  }
+}
+
+/**************
+  Below 450 (Small Phones)
+***************/
+@media (max-width: 28em) {
+  .plan-heading .number {
+    font-size: 6rem;
+  }
+
+  .hero-image,
+  .hero-text {
+    width: 90%;
+  }
+
+  .headding-primary {
+    font-size: 3.7rem;
+    line-height: 1.1;
+  }
+
+  .btn--primary,
+  .btn--outline {
+    width: 60%;
+  }
+
+  .plans .btn--primary {
+    margin-right: 0;
+    margin-bottom: 2rem;
+  }
+
+  .plan-heading {
+    column-gap: 1rem;
+  }
+
+  .plans {
+    margin-bottom: 20rem;
+  }
+
+  .headding-secondary {
+    font-size: 4rem;
+  }
+}
+
+/***
+ -- Font size range : 6   12    15  20   25    30    40  60    100
+
+ -- Border raduis :   7  10   44
+
+ -- Line height:   1.5  2     2.5     3
+
+ -- Box sizing
+
+ -- Space: 22 36 48  50   58 70
+
+ shades:  #9775fa
+***/

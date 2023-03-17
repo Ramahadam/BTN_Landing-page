@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!--Google fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!--Custom style-->
+    <link rel="stylesheet" href="./css/style.css" />
+
+    <!--Custom js-->
+    <script defer src="./js/custom.js"></script>
+    <title>Achievements</title>
+
+    <style>
+      .achievements {
+        text-align: center;
+      }
+
+      .achivement {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .achivement:nth-child(5) {
+        /** TODO: Adjust this for reesponsive**/
+        grid-column: 2 / 3;
+        justify-self: center;
+      }
+
+      .achivements-contents {
+        width: 80%;
+        margin: 15rem auto 0;
+        row-gap: 4rem;
+      }
+
+      /** TODO can use dry consept on this sine plan section has same circle**/
+      .achivements-contents::after {
+        content: "";
+        width: 50rem;
+        height: 50rem;
+        border-radius: 50%;
+        background: rgba(120, 84, 246, 0.3);
+        position: absolute;
+        top: 30%;
+        left: 50%;
+        transform: translateX(-50%);
+        z-index: -1;
+        filter: blur(300px);
+      }
+
+      .achivements-contents span {
+        display: block;
+      }
+
+      .achivement-number {
+        font-size: 3.6rem;
+        font-weight: 600;
+        color: var(--primary-color);
+      }
+
+      .achievement-title {
+        color: var(--primary-color);
+      }
+
+      .achivement-icon {
+        height: 3rem;
+        margin-bottom: 2rem;
+      }
+    </style>
+  </head>
+  <body>
+    <section class="achievements">
+      <h2 class="headding-secondary">
+        Get award-winning support and join a thriving community to learn and
+        grow faster.
+      </h2>
+      <p class="intro-text">
+        Discover how to unlock the full potential of HubSpot with a wealth of
+        free courses, certifications, and resources. Coupled with an
+        unparalleled customer support team and an engaged user community, you'll
+        have all the support you need to succeed.
+      </p>
+
+      <div class="achivements-contents grid grid-4-cols">
+        <div class="achivement">
+          <img
+            class="achivement-icon"
+            src="./img/hands.png"
+            alt="shaking hands"
+          />
+          <span class="achivement-number">200</span>
+          <span class="achievement-title">200 BTN user group</span>
+        </div>
+
+        <div class="achivement">
+          <img
+            class="achivement-icon"
+            src="./img/btn-achievement.svg"
+            alt="BTN logo brand"
+          />
+          <span class="achivement-number">2M</span>
+          <span class="achievement-title">Monthly visits</span>
+        </div>
+
+        <div class="achivement">
+          <img
+            class="achivement-icon"
+            src="./img/graduate.png"
+            alt="graduation hat"
+          />
+          <span class="achivement-number">600K</span>
+          <span class="achievement-title">Certified professionals</span>
+        </div>
+
+        <div class="achivement">
+          <img
+            class="achivement-icon"
+            src="./img/customers.png"
+            alt="person icons"
+          />
+          <span class="achivement-number">200,000</span>
+          <span class="achievement-title">Customers</span>
+        </div>
+
+        <div class="achivement">
+          <img
+            class="achivement-icon"
+            src="./img/communication.svg"
+            alt="chat icon"
+          />
+          <span class="achivement-number">4M</span>
+          <span class="achievement-title">Soical followers</span>
+        </div>
+
+        <div class="achivement">
+          <img class="achivement-icon" src="./img/earth.png" alt="Earth icon" />
+          <span class="achivement-number">8</span>
+          <span class="achievement-title">Languges</span>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>

@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!--Google fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!--Icons-->
+    <script
+      defer
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      defer
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+    <!--Custom style-->
+    <link rel="stylesheet" href="./css/style.css" />
+
+    <!--Custom js-->
+    <script defer src="./js/custom.js"></script>
+    <title>Achievements</title>
+
+    <style>
+      .testimonials {
+        text-align: center;
+      }
+
+      .testimonials__content {
+        background-color: #fff;
+        width: 90%;
+        border-radius: 4.4rem;
+        box-shadow: 0 1px 9px 6px rgb(98 98 100 / 10%);
+        margin: 0 auto 8rem;
+        padding: 5rem 10rem;
+        position: relative;
+      }
+
+      .customer-name {
+        color: var(--primary-color);
+        font-size: 3rem;
+        line-height: 1.5;
+      }
+
+      .customer-job {
+        font-size: 2.5rem;
+        margin-bottom: 2rem;
+        margin-bottom: 2rem;
+      }
+
+      .customer-reviews {
+        height: 2.8rem;
+      }
+
+      .customer-comment {
+        width: 80%;
+        margin: 2rem auto 0;
+      }
+
+      .testimonial-arrow-icon {
+        height: 3.5rem;
+        stroke: var(--secondary-color);
+        stroke-width: 2;
+      }
+      .btn-arrow {
+        background-color: transparent;
+        border: none;
+        cursor: pointer;
+        position: absolute;
+      }
+
+      .btn-left {
+        top: 70%;
+        left: 10px;
+      }
+      .btn-right {
+        top: 70%;
+        right: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <section class="testimonials">
+      <h2 class="headding-secondary">
+        Why marketers choose B<span class="mark-secondary">T</span>N
+      </h2>
+
+      <div class="testimonials__content">
+        <blockquote>
+          <div class="card">
+            <img
+              src="./img/customer.png"
+              alt="Customer phot"
+              class="card-image"
+            />
+            <p class="customer-name">Mark B.</p>
+            <p class="customer-job">Decode Digital Marketing</p>
+            <img class="customer-reviews" src="./img/review.svg" />
+            <p class="customer-comment">
+              “The analysis function of the competition is amazing: you can
+              analyze your competitors and where it compares with them and
+              perform gap analysis, where they are classified where not, etc.”
+            </p>
+          </div>
+          <button class="btn-arrow btn-left">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="currentColor"
+              class="testimonial-arrow-icon"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M15.75 19.5L8.25 12l7.5-7.5"
+              />
+            </svg>
+          </button>
+          <button class="btn-arrow btn-right">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="currentColor"
+              class="testimonial-arrow-icon"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M8.25 4.5l7.5 7.5-7.5 7.5"
+              />
+            </svg>
+          </button>
+        </blockquote>
+      </div>
+      <button class="btn btn--primary">Demo premium CRM</button>
+    </section>
+  </body>
+</html>
